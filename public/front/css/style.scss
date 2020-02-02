@@ -1,0 +1,327 @@
+/* Import Fonts */
+@font-face {
+  font-family : tajwal-light;
+  src         : url(../webfonts/tajwal/Tajawal-Regular.ttf);
+}
+
+@font-face {
+  font-family : tajwal-bold;
+  src         : url(../webfonts/tajwal/Tajawal-bold.ttf);
+}
+
+/* Colors Variables */
+$mainColor  : #27737e;
+$altColor   : #222;
+$BGColor    : #f9f9f9;
+$altBGColor : #cacaca;
+
+/* Global Style */
+* {
+  font-family : tajwal-light, sans-serif;
+  outline     : none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family   : tajwal-bold, sans-serif;
+  color         : $mainColor;
+  margin-bottom : 20px;
+}
+
+ul, ol {
+  padding-right : 20px;
+  margin-bottom : 0;
+
+  li {
+    margin-bottom : 5px;
+
+    h5 {
+      margin-bottom : 5px;
+    }
+
+    h6 {
+      display : inline-block;
+    }
+  }
+}
+
+.container {
+  max-width : 85%;
+  width     : 85%;
+}
+
+/* Start Styling */
+body {
+  background : $BGColor;
+  direction  : rtl;
+  text-align : right;
+  padding    : 180px 0;
+  min-height : 100vh;
+  position   : relative;
+  /* Start Nav Logo */
+  .nav-container {
+    left     : 0;
+    position : fixed;
+    right    : 0;
+    top      : 0;
+    z-index  : 3;
+
+    /* End Nav Logo */
+
+    /* Start Nav  */
+    nav.navbar {
+      background : #f0f0f0;
+      max-height : 100px;
+      padding    : 30px 0;
+
+      .navbar-brand {
+        display      : inline-block;
+        max-height   : 40px;
+        padding      : 0;
+        margin-right : 0;
+
+        img {
+          max-height : 40px;
+        }
+      }
+
+      .navbar-toggler {
+        background : $BGColor;
+        border     : none;
+        cursor     : pointer;
+      }
+
+      .collapse {
+        margin-top : 10px;
+        z-index    : 1;
+
+        ul {
+          padding    : 0;
+          text-align : right;
+
+          li {
+            &:not(:last-child) {
+              margin-left : 50px;
+              @media screen and (max-width : 1024px) {
+                margin-left : 0;
+              }
+            }
+
+            a {
+              color      : $altColor;
+              padding    : 0;
+              transition : 0.2s color ease-in-out;
+            }
+
+            &:hover {
+              a {
+                color : $mainColor;
+              }
+            }
+
+            .active {
+              > a {
+                color       : $mainColor;
+                font-family : tajwal-bold, sans-serif;
+                font-size   : 20px;
+
+              }
+            }
+          }
+        }
+
+        @media screen and (max-width : 1024px) {
+          background    : #eee;
+          border-radius : 0 0 9px 9px;
+          ul {
+            padding-right : 20px;
+            text-align    : right;
+
+            li {
+              margin-left : 0;
+
+              a {
+                padding : 10px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* End Nav  */
+
+  /* Start Footer */
+
+  footer {
+    background : #f0f0f0;
+    padding    : 10px 0;
+    text-align : right;
+    position   : absolute;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+
+    .copyright {
+      img {
+        display    : inline-block;
+        max-height : 40px;
+      }
+
+      p {
+        display : inline-block;
+        margin  : 0;
+      }
+    }
+
+    .footer-links {
+      list-style    : none;
+      margin-bottom : 0;
+
+      .footer-link {
+        display : inline-block;
+
+        a {
+          color : $altColor;
+        }
+
+        &:not(:last-of-type) {
+          margin-left : 30px;
+        }
+      }
+    }
+  }
+
+  /* End Footer */
+
+  /* Start Header  */
+  .home {
+    .header {
+      background      : url("../img/shutterstock_117030559.jpg") fixed center no-repeat;
+      background-size : cover;
+      height          : 80vh;
+      position        : relative;
+      text-align      : center;
+
+      .card-img-overlay {
+        background : rgba(0, 0, 0, 0.7);
+        bottom     : 0;
+        left       : 0;
+        position   : absolute;
+        right      : 0;
+        top        : 0;
+      }
+
+      .header-text {
+        background : rgba(153, 153, 153, 0.7);
+        color      : $mainColor;
+        padding    : 40px;
+        text-align : center;
+
+        h2 {
+          margin-bottom : 30px;
+          color         : $mainColor;
+        }
+
+        div {
+          font-size : 30px;
+          color     : #fbfdfc;
+        }
+
+        @media screen and (max-width : 425px) {
+          padding : 20px;
+          p {
+            font-size : 20px;
+          }
+        }
+      }
+
+      .header-icon {
+        bottom   : 0;
+        left     : 0;
+        position : absolute;
+        right    : 0;
+
+        button {
+          background : none;
+          border     : none;
+
+          i {
+            color     : $BGColor;
+            font-size : 40px;
+          }
+        }
+      }
+    }
+
+    .body-content {
+      margin : 40px 0 80px 0;
+
+      .col-md-4, .col-md-6 {
+
+        &:not(:last-of-type) {
+          margin-bottom : 40px;
+        }
+      }
+
+      img {
+        border-radius : 18px;
+      }
+
+      .content-box{
+        .content-box-desc * {
+          font-size: 1rem;
+          margin-top: 0;
+          margin-bottom: 1rem;
+          color: #212529;
+          line-height: 1.5;
+          font-family: tajwal-light, sans-serif !important
+        }
+      } 
+
+    }
+  }
+
+  .terms, .privacy-policy, .copyright, .trade-mark, .open-source {
+    .side-menu {
+      background    : $mainColor;
+      padding       : 30px;
+      color         : #fff;
+      border-radius : 18px;
+
+      h5 {
+        text-align : center;
+        color      : #fff;
+      }
+    }
+
+    .contents-box {
+      position      : relative;
+      border-radius : 18px;
+      background    : #eee;
+      padding       : 40px;
+
+      .date {
+        position : absolute;
+        top      : 20px;
+        right    : auto;
+        bottom   : auto;
+        left     : 20px;
+      }
+
+      h4 {
+        text-align    : center;
+        margin-bottom : 30px;
+      }
+
+      .content-box {
+        margin-bottom : 30px;
+
+        .content-box-desc {
+              margin-top: 0;
+              margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

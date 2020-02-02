@@ -1,0 +1,42 @@
+body {
+  direction: ltr;
+  text-align: left;
+}
+body .nav-container nav.navbar .collapse ul li:not(:last-child) {
+  /*margin-left: 0;
+  margin-right: 50px;*/
+}
+@media screen and (max-width: 1024px) {
+  body .nav-container nav.navbar .collapse ul li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+body .terms .date, body .privacy-policy .date, body .copyright .date, body .trade-mark .date, body .open-source .date {
+  right: 20px !important;
+  left: auto !important;
+}
+
+/*# sourceMappingURL=ltr.css.map */
+
+.input-group-prepend {
+  margin-right: -1px;
+}
+
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), 
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child), 
+.input-group>.input-group-append:not(:last-child)>.btn, 
+.input-group>.input-group-append:not(:last-child)>.input-group-text, 
+.input-group>.input-group-prepend>.btn, 
+.input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.input-group>.custom-select:not(:first-child), 
+.input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}

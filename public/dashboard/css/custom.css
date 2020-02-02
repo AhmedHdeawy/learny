@@ -1,0 +1,54 @@
+.dashboard-statistic a{
+    text-decoration: none;
+}
+
+header.navbar a.navbar-brand {
+	background-image: url('../img/logo.png') !important;
+	background-size: 45px auto;
+}
+
+.td-desc *{
+	font-size: .875rem !important;
+}
+
+
+.video-upload-hint,
+.video-upload-data,{
+/*.video-form .card-footer {*/
+	display: none;
+}
+
+
+.select2-container--default .select2-results__group {
+	background-color: #EEE;
+}
+
+.select2-container--default .select2-results__option[role=group] {
+    padding: 0;
+    border: 2px solid #AAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.select2-container--default .select2-selection--single {
+	height: 35px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 35px;
+}
+
+
+#vidoesName .card {
+	margin: 0;
+	border: 1px solid rgba(0,0,0,.125)
+}
+
+#vidoesName .card .card-header {
+	background-color: rgba(0,0,0,.03);
+	border-bottom: 0
+}
+
+#vidoesName .card .radio {
+	padding: 5px;
+}
