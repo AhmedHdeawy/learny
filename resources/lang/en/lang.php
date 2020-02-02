@@ -3,7 +3,7 @@
 return [
 
     'maintenanceMode'           =>  'Maintenance Mode',
-    'websiteName'               =>  'Learny',
+    'websiteName'               =>  'iView App',
     'home'	                    =>	'Home',
     'dashboard'                 =>  'Dashboard',
     'contactWithUs'             =>  'Contact With Us',
@@ -45,8 +45,8 @@ return [
     'loginDetails'              =>  'Login Details',
     'password'          =>  'Password',
     'password_confirmation'     =>  'password confirmation',
-    'aaynetAdminPanel'  =>  'Learny Admin Panel',
-    'aaynetAdminPanelDetails'  =>  'To ENter Learny Admin Panel, you should inser correct data',
+    'aaynetAdminPanel'  =>  'iView App Admin Panel',
+    'aaynetAdminPanelDetails'  =>  'To ENter iView App Admin Panel, you should inser correct data',
     'profile'   =>  'Profile',
     'users' =>  'Users',
     'admins'    =>  'Admins',

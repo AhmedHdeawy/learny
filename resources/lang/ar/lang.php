@@ -3,7 +3,7 @@
 return [
 
     'maintenanceMode'           =>  'عذراً الموقع متوقف حالياً',
-    'websiteName'               =>  'شبكة ليرني التعليمية',
+    'websiteName'               =>  'تطبيق اي فيو',
     'home'	                    =>	'الرئيسية',
     'dashboard'                 =>  'لوحة التحكم',
     'contactWithUs'             =>  'تواصل معنا',
@@ -45,8 +45,8 @@ return [
     'loginDetails'              =>  'ادخل بيانات حسابك',
     'password'                  =>  'كلمة المرور',
     'password_confirmation'     =>  'اعادة كلمة المرور',
-    'aaynetAdminPanel'  =>  'لوحة تحكم شبكة ليرني التعليمية',
-    'aaynetAdminPanelDetails'  =>  'للدخول الى لوحة تحكم موقع شبكة ليرني التعليمية. ادخل بيانات حسابك الصحيحة',
+    'aaynetAdminPanel'  =>  'لوحة تحكم تطبيق اي فيو',
+    'aaynetAdminPanelDetails'  =>  'للدخول الى لوحة تحكم موقع تطبيق اي فيو. ادخل بيانات حسابك الصحيحة',
     'profile'   =>  'الملف الشخصي',
     'users' =>  'المستخدمين',
     'admins'    =>  'المشرفين',
