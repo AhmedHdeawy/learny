@@ -19,8 +19,54 @@ class HomeController extends Controller
      */
     public function index()
     {
-        abort(404);
-        return view('front.home');
+        // return view('welcome');
+        return view('front.support');
+    }
+
+
+    /**
+     * Show the application support page.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function support()
+    {
+        return view('front.support');
+    }
+
+
+    /**
+     * Post the ContactUs Form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function postContactUs(Request $request)
+    {        
+
+        // Validate Form
+        $this->validateContactUs($request);
+        
+        // Create New Row
+        ContactUs::create($request->all());
+
+        return redirect()->route('support')->with('status', __('lang.contactUsDone'));
+
+    }
+
+
+    /**
+     * Validate Form Request.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function validateContactUs(Request $request)
+    {
+        Validator::make($request->all(), [
+            'name' => 'required|string|max:100',
+            'email' => 'required|email|max:100',
+            'phone' => 'required|max:100',
+            'message' => 'required|string',
+        ])->validate();   
     }
 
 
