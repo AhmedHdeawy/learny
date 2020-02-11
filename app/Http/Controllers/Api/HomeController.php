@@ -35,7 +35,7 @@ class HomeController extends Controller
         }
 
 
-        $videos = Video::with('category')->withCount('likes')->withCount('dislikes')->limit(10)->get();
+        $videos = Video::with('category')->withCount('likes')->withCount('dislikes')->get();
         
         return $this->jsonResponse(200, 'Logged in Successfully', null, compact('categories', 'videos'));
     }

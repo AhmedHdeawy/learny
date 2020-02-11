@@ -128,8 +128,8 @@
       <div class="col-md-9">
           <textarea type="text" id="{{ $languag->locale }}[videos_desc]" name="{{ $languag->locale }}[videos_desc]" 
             class="form-control {{ $errors->first($languag->locale .'.videos_desc') ? 'is-invalid' : '' }}" 
-            placeholder="{{ __('lang.desc') }}"
-          >{{ old($languag->locale .'videos_desc', isset($blog) ? $blog->translate($languag->locale)->videos_desc : '') }}</textarea>
+            placeholder="{{ __('lang.desc') }}" rows="7" 
+          >{{ old($languag->locale .'videos_desc', isset($video) ? $video->translate($languag->locale)->videos_desc : '') }}</textarea>
           
           @if ($errors->first($languag->locale .'.videos_desc'))
             <div class="invalid-feedback text-danger">{{ $errors->first($languag->locale .'.videos_desc') }}</div>
