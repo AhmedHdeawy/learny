@@ -24,7 +24,7 @@
         "admin-lte": "^3.0.0-alpha.2",
         "laravel-vue-pagination": "^2.2.0",
         "luxon": "^1.11.3",
-        "moment": "^2.23.0",
+        "moment": "^2.29.2",
         "sweetalert2": "^7.32.4",
         "vform": "^1.0.0",
         "vue-datetime": "^1.0.0-beta.10",
